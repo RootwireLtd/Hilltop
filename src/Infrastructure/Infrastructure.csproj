@@ -1,13 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Rootwire.Hilltop.Domain\Rootwire.Hilltop.Domain.csproj" />
+    <ProjectReference Include="..\Application\Application.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AssemblyName>Infrastructure</AssemblyName>
+    <RootNamespace>Rootwire.Hilltop.Infrastructure</RootNamespace>
   </PropertyGroup>
 
 </Project>

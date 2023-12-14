@@ -5,6 +5,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <InvariantGlobalization>true</InvariantGlobalization>
+    <AssemblyName>Api</AssemblyName>
+    <RootNamespace>Rootwire.Hilltop.Api</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Rootwire.Hilltop.Application\Rootwire.Hilltop.Application.csproj" />
-    <ProjectReference Include="..\Rootwire.Hilltop.Infrastructure\Rootwire.Hilltop.Infrastructure.csproj" />
+    <ProjectReference Include="..\Application\Application.csproj" />
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

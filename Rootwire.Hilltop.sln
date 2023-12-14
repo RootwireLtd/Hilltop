@@ -5,13 +5,17 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E4BB6627-90E2-43C2-B346-E9EA65C79FA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rootwire.Hilltop.Infrastructure", "src\Rootwire.Hilltop.Infrastructure\Rootwire.Hilltop.Infrastructure.csproj", "{64D750E5-E6EB-4213-A332-CC4CBBD7C4CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{64D750E5-E6EB-4213-A332-CC4CBBD7C4CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rootwire.Hilltop.Domain", "src\Rootwire.Hilltop.Domain\Rootwire.Hilltop.Domain.csproj", "{872806E5-F99C-4A22-A2E0-61D2B9D7BE06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{872806E5-F99C-4A22-A2E0-61D2B9D7BE06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rootwire.Hilltop.Application", "src\Rootwire.Hilltop.Application\Rootwire.Hilltop.Application.csproj", "{21705799-31B4-45BE-8D32-6E4F5402FDBD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Application\Application.csproj", "{21705799-31B4-45BE-8D32-6E4F5402FDBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rootwire.Hilltop.Api", "src\Rootwire.Hilltop.Api\Rootwire.Hilltop.Api.csproj", "{2A1B4CEE-03F6-437F-AD4E-5AF7B091B7E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "src\Api\Api.csproj", "{2A1B4CEE-03F6-437F-AD4E-5AF7B091B7E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{61E2371B-301A-453A-89E6-8E6E3B31085F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Test", "test\Api.Test\Api.Test.csproj", "{3E7F0550-AA57-4DC2-B345-FE811E24BD48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,11 +42,16 @@ Global
 		{2A1B4CEE-03F6-437F-AD4E-5AF7B091B7E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A1B4CEE-03F6-437F-AD4E-5AF7B091B7E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A1B4CEE-03F6-437F-AD4E-5AF7B091B7E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E7F0550-AA57-4DC2-B345-FE811E24BD48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7F0550-AA57-4DC2-B345-FE811E24BD48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7F0550-AA57-4DC2-B345-FE811E24BD48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7F0550-AA57-4DC2-B345-FE811E24BD48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{64D750E5-E6EB-4213-A332-CC4CBBD7C4CD} = {E4BB6627-90E2-43C2-B346-E9EA65C79FA4}
 		{872806E5-F99C-4A22-A2E0-61D2B9D7BE06} = {E4BB6627-90E2-43C2-B346-E9EA65C79FA4}
 		{21705799-31B4-45BE-8D32-6E4F5402FDBD} = {E4BB6627-90E2-43C2-B346-E9EA65C79FA4}
 		{2A1B4CEE-03F6-437F-AD4E-5AF7B091B7E9} = {E4BB6627-90E2-43C2-B346-E9EA65C79FA4}
+		{3E7F0550-AA57-4DC2-B345-FE811E24BD48} = {61E2371B-301A-453A-89E6-8E6E3B31085F}
 	EndGlobalSection
 EndGlobal
