@@ -1,0 +1,26 @@
+<Project>
+
+  <PropertyGroup>
+    <CurrentYear>$([System.DateTime]::Now.Year)</CurrentYear>
+    <CurrentMonth>$([System.DateTime]::Now.Month)</CurrentMonth>
+    <CurrentDay>$([System.DateTime]::Now.Day)</CurrentDay>
+    <TargetFramework>net8.0</TargetFramework>
+    <Version>$(CurrentYear).$(CurrentMonth).$(CurrentDay)</Version>
+    <RootNamespace>Rootwire.Hilltop.$(MSBuildProjectName)</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IncludeSourceRevisionInInformationalVersion>true</IncludeSourceRevisionInInformationalVersion>
+  </PropertyGroup>
+
+  <!--
+    This section is for packages that we use multiple times throughout the solution
+    It gives us a single place to manage the version to ensure we are using the same version
+    across the solution.
+  -->
+  <PropertyGroup>
+    <!--
+      NuGet: https://www.nuget.org/packages/xunit
+    -->
+    <XUnitVersion>2.6.3</XUnitVersion>
+  </PropertyGroup>
+
+</Project>
