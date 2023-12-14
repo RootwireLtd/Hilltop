@@ -1,0 +1,17 @@
+# Begin API Service
+
+upstream api_loadbalancer {
+    # Add additional API services here uniquely identified by their port
+    # Below assumes two services running on the docker host machine on ports 5248 and 5249
+    server host.docker.internal:5248;
+    # server host.docker.internal:5249;
+}
+
+server {
+    listen 4100; # The port clients will connect to for the Api, must be exposed via Docker
+    location / {
+        proxy_pass http://api_loadbalancer;
+    }
+}
+
+# End API Service

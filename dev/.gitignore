@@ -1,0 +1,7 @@
+# Secrets
+.data
+.env
+secrets.json
+
+# Reverse Proxy Conifg
+reverse-proxy.conf
