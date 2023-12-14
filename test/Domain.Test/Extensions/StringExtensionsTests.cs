@@ -52,7 +52,7 @@ public class GenerateEntityIdentifierTestData : IEnumerable<object[]>
     public static string Utf8Charset = Utilities.GenerateUtf8Characters();
     public IEnumerator<object[]> GetEnumerator()
     {
-        yield return new object[] { Utf8Charset, "-.0123456789abcdefghijklmnopqrstuvwxyz_abcdefghijklmnopqrstuvwxyz-" };
+        yield return new object[] { Utf8Charset, "-.0123456789abcdefghijklmnopqrstuvwxyz-abcdefghijklmnopqrstuvwxyz-" };
         yield return new object[] { "!ExpEc\"ted 50 g@rbl3d d47*", "expected-50-grbl3d-d47" };
     }
 

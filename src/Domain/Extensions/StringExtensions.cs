@@ -26,12 +26,12 @@ public static class StringExtensions
         foreach (char c in input)
         {
             // Check for whitespace
-            if (char.IsWhiteSpace(c))
+            if (char.IsWhiteSpace(c) || c == '_')
             { 
                 sb.Append('-'); 
             }
             // else if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || c == '-' || c == '.')
-            else if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || c == '.' || c == '-' || c == '_') // Keep alphanumeric, hyphens, and underscores
+            else if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || c == '.' || c == '-') // Keep alphanumeric, hyphens, and underscores
 
             {
                 sb.Append(char.ToLower(c));
