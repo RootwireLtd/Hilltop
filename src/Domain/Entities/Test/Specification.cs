@@ -6,16 +6,20 @@ namespace Rootwire.Hilltop.Domain.Entities.Test;
 public class Specification : BaseAuditableEntity
 {
     public const string _prefix = "spec";
-
     private string _identifier;
     
     /// <summary>
-    /// Colon seperated identifier in format Prefix:identifier
+    /// A String based identifier
     /// </summary>
     public string Identifier
     {
         get => _identifier;
-        set => _identifier = $"{_prefix}:{value.GenerateEntityIdentifier()}";
+        set => _identifier = value.GenerateEntityIdentifier();
+    }
+    
+    public string ReferenceTag
+    {
+        get => $"{_prefix}:{_identifier}";
     }
     
     /// <summary>

@@ -7,10 +7,21 @@ public class Authority : BaseAuditableEntity
 {
     public const string _prefix = "authority";
 
+    private string _identifier;
+    
     /// <summary>
-    /// Colon seperated identifier in format Prefix:identifier
+    /// A String based identifier
     /// </summary>
-    public string Identifier { get; set; }
+    public string Identifier
+    {
+        get => _identifier;
+        set => _identifier = value.GenerateEntityIdentifier();
+    }
+    
+    public string ReferenceTag
+    {
+        get => $"{_prefix}:{_identifier}";
+    }
     
     private string _name;
     private string _description;
@@ -27,14 +38,5 @@ public class Authority : BaseAuditableEntity
     /// </summary>
     public string? Description { get => _description;
         set { _description = value; }
-    }
-    
-    public Authority(string name, string description = null)
-    {
-        Name = name;
-        Description = description;
-        
-        string normalisedName = Name.GenerateEntityIdentifier();
-        Identifier = $"{_prefix}:{normalisedName}";
     }
 }
