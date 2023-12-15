@@ -10,19 +10,19 @@ public class Specification : BaseAuditableEntity
     private string _identifier;
     
     /// <summary>
-    /// The Name of the Specification
-    /// </summary>
-    public string Name { get; set; }
-    
-    /// <summary>
-    /// Hyphen seperated identifier
+    /// Colon seperated identifier in format Prefix:identifier
     /// </summary>
     public string Identifier
     {
         get => _identifier;
         set => _identifier = $"{_prefix}:{value.GenerateEntityIdentifier()}";
     }
-
+    
+    /// <summary>
+    /// The Name of the Specification
+    /// </summary>
+    public string Name { get; set; }
+    
     /// <summary>
     /// The Authority responsible for maintaining the specification
     /// </summary>

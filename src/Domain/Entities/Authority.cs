@@ -8,7 +8,7 @@ public class Authority : BaseAuditableEntity
     public const string _prefix = "authority";
 
     /// <summary>
-    /// Hyphen seperated identifier
+    /// Colon seperated identifier in format Prefix:identifier
     /// </summary>
     public string Identifier { get; set; }
     
