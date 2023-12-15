@@ -26,8 +26,8 @@ public class AuthorityTests
         {
             Identifier = input
         };
-        Assert.NotNull(_sut.Identifier);
-        Assert.Equal(expectedOutput, _sut.Identifier);
+        Assert.NotNull(_sut.ReferenceTag);
+        Assert.Equal(expectedOutput, _sut.ReferenceTag);
     }
     
 }
